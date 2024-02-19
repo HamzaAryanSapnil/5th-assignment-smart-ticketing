@@ -25,18 +25,23 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              backgroundColor: "#1E1E1E",
               navBtnBackgroundColor: "#1DD1001A",
               navBtnBackgroundColorFifteen: "#1DD10026",
               navBtnBorderColor: "#1DD10066",
               navBtnColor: "#1DD100",
               navHeadingColor: "#030712",
               navHeadingColorSixty: "#03071260",
-              couponHeadingColor: "#030712CC",
+              couponHeadingColorEighty: "#030712CC",
+              couponHeadingColorFivePercent: "#0307120D",
               couponDateColor: "#03071280",
               couponNameColor: "#03071266",
               navColor: "#030712B3",
               firstCouponBgColor: "#FFBF0F",
               secCouponBgColor: "#F78C9C",
+              ticketDesBackground: "#F7F8F8",
+              ticketDesBorderColor: "#03071233",
+              departureMainBackground: "#F7F8F8",
             },
           },
           fontFamily: {
@@ -189,7 +194,7 @@
         </div>
       </div>
     </header>
-    <main class="my-28 space-y-28">
+    <main class="my-28 space-y-28 ">
       <!-- best offer -->
       <section class="best-offers">
         <div class="flex flex-col justify-center items-center gap-y-10 w-full">
@@ -284,38 +289,59 @@
       <!-- main ph poribahan section -->
       <section class="w-full">
         <!-- departure section -->
-         <section class="w-full flex flex-col justify-center items-center">
+         <section class="w-full flex flex-col justify-center items-center bg-departureMainBackground">
           <!-- departure section heading -->
           <div class="md:w-[600px]   text-center space-y-6">
             <h1 class="font-raleway font-bold text-4xl">P.H Paribahan</h1>
             <p class="font-inter text-lg font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
           </div>
           <!-- departure main -->
-          <div>
+          <div class="flex flex-col lg:flex-row justify-center items-center gap-y-6 lg:gap-y-0 gap-x-6 md:w-[1170px] md:h-[450px] bg-white ">
              <!-- first side -->
-            <div class="w-[810px]">
-              <div class="">
-                <div class="flex w-full">
-                  <div class="flex items-center">
+            <div class=" md:w-[810px] h-full border-r-2 border-dashed border-r-navBtnColor pr-12">
+              <div class="flex flex-col gap-y-6 mt-8">
+                <!-- heading -->
+                <div class="flex flex-col md:flex-row w-full justify-center items-center md:justify-between gap-y-6 md:gap-y-0">
+                  <!-- gari -->
+                  <div class="flex flex-col md:flex-row items-center w-full gap-4 ">
                     <!-- bus logo -->
                     <div class="">
                       <img src="images/bus-logo.png" alt="" srcset="">
                     </div>
                     <!-- bus des -->
-                    <div>
-                      <h1 class="font-raleway font-bold text-2xl text-navHeadingColor">Greenline Paribahan</h1>
+                    <div class="space-y-3">
+                      <h1 class="font-raleway font-bold text-2xl text-navHeadingColor ">Greenline Paribahan</h1>
                       <p class="font-inter text-lg text-navHeadingColorSixty">Coach-009-WEB ! AC_Business</p>
                     </div>
                   </div>
+                  <!-- seat -->
                   <div>
                     <button class="btn bg-navBtnBackgroundColorFifteen text-navBtnColor"><i class="fa-solid fa-couch"></i> 40 Seats left</button>
                   </div>
                 </div>
-                <div></div>
+                <!-- main -->
+                <div class="bg-ticketDesBackground w-full p-8 rounded-3xl">
+                  <div class="border-b-2 border-dashed border-b-ticketDesBorderColor w-full flex justify-between items-center py-6 h-full">
+                    <p class="font-raleway font-semibold text-lg text-navHeadingColorSixty">Route</p>
+                    <h6 class="text-navHeadingColor text-lg font-semibold font-raleway">Dhaka - Sylhet</h6>
+                  </div>
+                  <div class="border-b-2 border-dashed border-b-ticketDesBorderColor w-full flex justify-between items-center py-6 h-full">
+                    <p class="font-raleway font-semibold text-lg text-navHeadingColorSixty">Departure Time</p>
+                    <h6 class="text-navHeadingColor text-lg font-semibold font-raleway">9.00PM</h6>
+                  </div>
+                  <div class="flex flex-wrap gap-y-4 md:gap-y-0 justify-around pt-6">
+                    <button class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent">Boarding Point - Laxmipur</button><button class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent">Dropping Point - Bogura</button><button class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent">Est. Time - 11 Hour</button>
+                  </div>
+                </div>
               </div>
               <div></div>
             </div>
             <!-- sec side -->
+            <div class="flex flex-col h-full md:relative ">
+              <div class="bg-departureMainBackground w-16 h-16 rounded-full shrink-0 py-6 md:absolute md:-top-6 -right-[0.5rem]"></div>
+              <div class="bg-departureMainBackground w-16 h-16 rounded-full shrink-0 md:absolute md:-bottom-6 -right-[0.5rem]"></div>
+            </div>
+            <!-- third side -->
             <div></div>
           </div>
          </section>
