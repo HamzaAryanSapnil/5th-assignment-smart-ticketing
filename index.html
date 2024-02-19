@@ -51,7 +51,6 @@
         },
       };
     </script>
-    http://127.0.0.1:3000/index.html
     <title>Smart Ticketing</title>
     <style type="text/tailwindcss">
       @layer utilities {
@@ -194,26 +193,27 @@
         </div>
       </div>
     </header>
-    <main class="my-28 space-y-28 ">
+    <main class="my-28 space-y-28">
       <!-- best offer -->
       <section class="best-offers">
         <div class="flex flex-col justify-center items-center gap-y-10 w-full">
           <h1 class="font-raleway font-bold text-4xl text-navHeadingColor">
             Best offers for you
           </h1>
-          <div class="flex flex-col  lg:flex-row gap-y-6 lg:gap-y-0 justify-center   items-center lg:justify-around w-full">
+          <div
+            class="flex flex-col lg:flex-row gap-y-6 lg:gap-y-0 justify-center items-center lg:justify-around w-full"
+          >
             <div class="">
               <!-- skeleton 1 -->
               <div
-                class="w-[300px] md:w-[750px] lg:w-[804px] h-[232px] skeleton relative flex justify-between items-center bg-firstCouponBgColor "
+                class="w-[300px] md:w-[750px] lg:w-[804px] h-[232px] skeleton relative flex justify-between items-center bg-firstCouponBgColor"
               >
                 <div
                   class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white md:left-auto left-28 md:right-[11.55rem] -top-7"
                 ></div>
                 <!-- second circle -->
                 <div
-                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white  
-                        md:left-auto left-28 md:right-[11.55rem] -bottom-7 text-center "
+                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white md:left-auto left-28 md:right-[11.55rem] -bottom-7 text-center"
                 ></div>
                 <!-- percentage of discount -->
                 <div
@@ -246,10 +246,10 @@
                 class="w-[300px] md:w-[750px] lg:w-[804px] h-[232px] skeleton relative flex justify-between items-center bg-secCouponBgColor"
               >
                 <div
-                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white  left-28 md:left-auto md:right-[11.55rem] -top-7"
+                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white left-28 md:left-auto md:right-[11.55rem] -top-7"
                 ></div>
                 <div
-                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white  left-28 md:left-auto md:right-[11.55rem] -bottom-7"
+                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white left-28 md:left-auto md:right-[11.55rem] -bottom-7"
                 ></div>
                 <!-- percentage of discount -->
                 <div
@@ -287,72 +287,169 @@
         </div>
       </section>
       <!-- main ph poribahan section -->
-      <section class="w-full">
+      <section class="w-full space-y-6">
         <!-- departure section -->
-         <section class="w-full flex flex-col justify-center items-center bg-departureMainBackground gap-y-6">
+        <section
+          class="w-full flex flex-col justify-center items-center bg-departureMainBackground gap-y-6"
+        >
           <!-- departure section heading -->
-          <div class="md:w-[600px]   text-center space-y-6" >
+          <div class="md:w-[600px] text-center space-y-6">
             <h1 class="font-raleway font-bold text-4xl">P.H Paribahan</h1>
-            <p class="font-inter text-lg font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <p class="font-inter text-lg font-normal">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
           </div>
           <!-- departure main -->
-          <div class="flex flex-col lg:flex-row justify-center items-center gap-y-6 lg:gap-y-0 gap-x-6 lg:w-[1170px] lg:h-[450px] bg-white ">
-             <!-- first side -->
-            <div class=" md:w-[810px] h-full lg:border-r-2 border-dashed border-r-navBtnColor pr-12">
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-y-6 lg:gap-y-0 gap-x-6 lg:w-[1170px] lg:h-[450px] bg-white"
+          >
+            <!-- first side -->
+            <div
+              class="md:w-[810px] h-full lg:border-r-2 border-dashed border-r-navBtnColor pr-12"
+            >
               <div class="flex flex-col gap-y-6 mt-8">
                 <!-- heading -->
-                <div class="flex flex-col md:flex-row w-full justify-center items-center md:justify-between gap-y-6 md:gap-y-0">
+                <div
+                  class="flex flex-col md:flex-row w-full justify-center items-center md:justify-between gap-y-6 md:gap-y-0"
+                >
                   <!-- gari -->
-                  <div class="flex flex-col md:flex-row items-center w-full gap-4 ">
+                  <div
+                    class="flex flex-col md:flex-row items-center w-full gap-4"
+                  >
                     <!-- bus logo -->
                     <div class="">
-                      <img src="images/bus-logo.png" alt="" srcset="">
+                      <img src="images/bus-logo.png" alt="" srcset="" />
                     </div>
                     <!-- bus des -->
                     <div class="space-y-3 text-center md:text-start">
-                      <h1 class="font-raleway font-bold text-2xl text-navHeadingColor ">Greenline Paribahan</h1>
-                      <p class="font-inter text-lg text-navHeadingColorSixty">Coach-009-WEB ! AC_Business</p>
+                      <h1
+                        class="font-raleway font-bold text-2xl text-navHeadingColor"
+                      >
+                        Greenline Paribahan
+                      </h1>
+                      <p class="font-inter text-lg text-navHeadingColorSixty">
+                        Coach-009-WEB ! AC_Business
+                      </p>
                     </div>
                   </div>
                   <!-- seat -->
                   <div>
-                    <button class="btn bg-navBtnBackgroundColorFifteen text-navBtnColor"><i class="fa-solid fa-couch"></i> 40 Seats left</button>
+                    <button
+                      class="btn bg-navBtnBackgroundColorFifteen text-navBtnColor"
+                    >
+                      <i class="fa-solid fa-couch"></i> 40 Seats left
+                    </button>
                   </div>
                 </div>
                 <!-- main -->
                 <div class="bg-ticketDesBackground w-full p-8 rounded-3xl">
-                  <div class="border-b-2 border-dashed border-b-ticketDesBorderColor w-full flex justify-between items-center py-6 h-full">
-                    <p class="font-raleway font-semibold text-lg text-navHeadingColorSixty">Route</p>
-                    <h6 class="text-navHeadingColor text-lg font-semibold font-raleway">Dhaka - Sylhet</h6>
+                  <div
+                    class="border-b-2 border-dashed border-b-ticketDesBorderColor w-full flex justify-between items-center py-6 h-full"
+                  >
+                    <p
+                      class="font-raleway font-semibold text-lg text-navHeadingColorSixty"
+                    >
+                      Route
+                    </p>
+                    <h6
+                      class="text-navHeadingColor text-lg font-semibold font-raleway"
+                    >
+                      Dhaka - Sylhet
+                    </h6>
                   </div>
-                  <div class="border-b-2 border-dashed border-b-ticketDesBorderColor w-full flex justify-between items-center py-6 h-full">
-                    <p class="font-raleway font-semibold text-lg text-navHeadingColorSixty">Departure Time</p>
-                    <h6 class="text-navHeadingColor text-lg font-semibold font-raleway">9.00PM</h6>
+                  <div
+                    class="border-b-2 border-dashed border-b-ticketDesBorderColor w-full flex justify-between items-center py-6 h-full"
+                  >
+                    <p
+                      class="font-raleway font-semibold text-lg text-navHeadingColorSixty"
+                    >
+                      Departure Time
+                    </p>
+                    <h6
+                      class="text-navHeadingColor text-lg font-semibold font-raleway"
+                    >
+                      9.00PM
+                    </h6>
                   </div>
-                  <div class="flex flex-wrap gap-y-4 md:gap-y-0 justify-around pt-6">
-                    <button class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent">Boarding Point - Laxmipur</button><button class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent">Dropping Point - Bogura</button><button class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent">Est. Time - 11 Hour</button>
+                  <div
+                    class="flex flex-wrap gap-y-4 md:gap-y-0 justify-around pt-6"
+                  >
+                    <button
+                      class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent"
+                    >
+                      Boarding Point - Laxmipur</button
+                    ><button
+                      class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent"
+                    >
+                      Dropping Point - Bogura</button
+                    ><button
+                      class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent"
+                    >
+                      Est. Time - 11 Hour
+                    </button>
                   </div>
                 </div>
               </div>
               <div></div>
             </div>
             <!-- sec side -->
-            <div class="hidden lg:flex flex-col h-full md:relative  ">
-              <div class="bg-departureMainBackground w-16 h-16 rounded-full shrink-0 py-6 md:absolute md:-top-6 -right-[0.5rem]"></div>
-              <div class="bg-departureMainBackground w-16 h-16 rounded-full shrink-0 md:absolute md:-bottom-6 -right-[0.5rem]"></div>
+            <div class="hidden lg:flex flex-col h-full md:relative">
+              <div
+                class="bg-departureMainBackground w-16 h-16 rounded-full shrink-0 py-6 md:absolute md:-top-6 -right-[0.5rem]"
+              ></div>
+              <div
+                class="bg-departureMainBackground w-16 h-16 rounded-full shrink-0 md:absolute md:-bottom-6 -right-[0.5rem]"
+              ></div>
             </div>
             <!-- third side -->
-            <div class="flex flex-col gap-y-6 items-center justify-center w-32 h-32">
-              <div><img src="images/fare.png" alt=""></div>
-              <h3 class="font-raleway font-bold text-3xl text-navHeadingColor">550 Taka</h3>
-              <p class="font-raleway font-semibold text-2xl text-navHeadingColorSixty">Per Seat</p>
+            <div
+              class="flex flex-col gap-y-6 items-center justify-center w-32 h-32"
+            >
+              <div><img src="images/fare.png" alt="" /></div>
+              <h3 class="font-raleway font-bold text-3xl text-navHeadingColor">
+                550 Taka
+              </h3>
+              <p
+                class="font-raleway font-semibold text-2xl text-navHeadingColorSixty"
+              >
+                Per Seat
+              </p>
             </div>
           </div>
-         </section>
-         <!-- ticketing section -->
-         <section>
-          
-         </section>
+        </section>
+        <!-- ticketing section -->
+        <section>
+          <!-- seat -->
+          <div class="font-inter">
+            <!-- seat heading -->
+            <div class="space-y-4">
+              <h1
+                class="font-raleway font-semibold text-2xl text-navHeadingColor border-b-2 border-dashed border-b-navHeadingColorSixty py-6"
+              >
+                Select Your Seat
+              </h1>
+              <div
+                class="flex justify-between items-center border-b-2 border-dashed border-b-navHeadingColorSixty py-6"
+              >
+                <p class="text-couponDateColor font-medium text-lg">
+                  <i class="fa-solid fa-couch"></i> Available
+                </p>
+                <p class="text-navBtnColor font-medium text-lg">
+                  <i class="fa-solid fa-couch"></i> Selected
+                </p>
+              </div>
+            </div>
+            <!-- seating -->
+            <div>
+              <!-- driver seat -->
+              <div class="grid grid-cols-5">
+                <button class="btn btn-seat" id="btn-1"><img src="images/wheel.png" alt=""></button><button class="btn btn-seat" id="btn-2">2</button><button class="btn btn-seat" id="btn-3">3</button><button class="btn btn-seat" id="btn-4">4</button><button class="btn btn-seat" id="btn-5">5</button><button class="btn btn-seat" id="btn-6">6</button><button class="btn btn-seat" id="btn-7">7</button><button class="btn btn-seat" id="btn-8">8</button><button class="btn btn-seat" id="btn-9">9</button><button class="btn btn-seat" id="btn-10">10</button><button class="btn btn-seat" id="btn-11">11</button><button class="btn btn-seat" id="btn-12">12</button><button class="btn btn-seat" id="btn-13">13</button><button class="btn btn-seat" id="btn-14">14</button><button class="btn btn-seat" id="btn-15">15</button><button class="btn btn-seat" id="btn-16">16</button><button class="btn btn-seat" id="btn-17">17</button><button class="btn btn-seat" id="btn-18">18</button><button class="btn btn-seat" id="btn-19">19</button><button class="btn btn-seat" id="btn-20">20</button><button class="btn btn-seat" id="btn-21">21</button><button class="btn btn-seat" id="btn-22">22</button><button class="btn btn-seat" id="btn-23">23</button><button class="btn btn-seat" id="btn-24">24</button><button class="btn btn-seat" id="btn-25">25</button><button class="btn btn-seat" id="btn-26">26</button><button class="btn btn-seat" id="btn-27">27</button><button class="btn btn-seat" id="btn-28">28</button><button class="btn btn-seat" id="btn-29">29</button><button class="btn btn-seat" id="btn-30">30</button><button class="btn btn-seat" id="btn-31">31</button><button class="btn btn-seat" id="btn-32">32</button><button class="btn btn-seat" id="btn-33">33</button><button class="btn btn-seat" id="btn-34">34</button><button class="btn btn-seat" id="btn-35">35</button><button class="btn btn-seat" id="btn-36">36</button><button class="btn btn-seat" id="btn-37">37</button><button class="btn btn-seat" id="btn-38">38</button><button class="btn btn-seat" id="btn-39">39</button><button class="btn btn-seat" id="btn-40">40</button><button class="btn btn-seat" id="btn-41">41</button><button class="btn btn-seat" id="btn-42">42</button><button class="btn btn-seat" id="btn-43">43</button><button class="btn btn-seat" id="btn-44">44</button><button class="btn btn-seat" id="btn-45">45</button><button class="btn btn-seat" id="btn-46">46</button><button class="btn btn-seat" id="btn-47">47</button><button class="btn btn-seat" id="btn-48">48</button><button class="btn btn-seat" id="btn-49">49</button><button class="btn btn-seat" id="btn-50">50</button><button class="btn btn-seat" id="btn-51">51</button><button class="btn btn-seat" id="btn-52">52</button><button class="btn btn-seat" id="btn-53">53</button><button class="btn btn-seat" id="btn-54">54</button><button class="btn btn-seat" id="btn-55">55</button><button class="btn btn-seat" id="btn-56">56</button>
+            </div>
+          </div>
+          <!-- passenger details -->
+          <div></div>
+        </section>
       </section>
     </main>
     <footer></footer>
