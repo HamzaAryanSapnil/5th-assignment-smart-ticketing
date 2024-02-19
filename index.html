@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/6d245becde.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              navBtnBackgroundColor: "#1DD1001A",
+              navBtnBorderColor: "#1DD10066",
+              navBtnColor: "#1DD100",
+              navHeadingColor: "#030712",
+              couponHeadingColor: "#030712CC",
+              couponDateColor: "#03071280",
+              couponNameColor: "#03071266",
+              navColor: "#030712B3",
+              firstCouponBgColor: "#FFBF0F",
+              secCouponBgColor: "#F78C9C",
+            },
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"],
+            raleway: ["Raleway", "sans-serif"],
+          },
+        },
+      };
+    </script>
+    http://127.0.0.1:3000/index.html
+    <title>Smart Ticketing</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="px-2 lg:px-6 pt-1">
+    <header class="font-raleway">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-navColor"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn btn-ghost text-xl lg:text-4xl text-navHeadingColor font-extrabold font-raleway"
+              >P-Ticket</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-navColor text-lg">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn text-navBtnColor border-2 border-navBtnBorderColor bg-navBtnBackgroundColor font-bold lg:text-xl"
+              >Bus <i class="fa-solid fa-van-shuttle"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner -->
+      <div
+        class="flex flex-col justify-center items-center banner w-full lg:h-[650px] bg-no-repeat bg-cover bg-center mt-7 rounded-3xl"
+        style="
+          background-image: linear-gradient(
+              180deg,
+              rgba(3, 7, 18, 0.5),
+              rgba(3, 7, 18, 0) 100%
+            ),
+            url('images/banner.png');
+        "
+      >
+        <div class="flex flex-col justify-center items-center">
+          <div class="text-center mt-36 lg:w-[800px]">
+            <h1
+              class="font-raleway lg:text-7xl font-extrabold text-white lg:leading-[86px]"
+            >
+              End-to-End Travel with <br />
+              <span class="text-navBtnColor">P Paribahan</span>
+            </h1>
+            <p class="font-inter text-white text-lg px-5 pt-6 pb-8">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined.
+            </p>
+            <button
+              class="btn bg-navBtnColor text-navHeadingColor font-raleway font-bold border-none mb-16"
+            >
+              Buy Tickets
+            </button>
+          </div>
+          <div
+            class="banner-cards flex flex-col lg:flex-row mt-10 gap-y-4 lg:gap-y-0 gap-x-4"
+          >
+            <!-- card 1 -->
+            <div>
+              <div
+                class="card card-side bg-base-100 shadow-xl w-72 lg:w-80 h-44 border-2 border-b-navBtnColor"
+              >
+                <figure><img src="images/people.png" alt="Movie" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title font-inter font-bold text-4xl">
+                    500K+
+                  </h2>
+                  <p>Registered users</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div>
+              <div
+                class="card card-side bg-base-100 shadow-xl w-72 lg:w-80 h-44 border-2 border-b-navBtnColor"
+              >
+                <figure>
+                  <img src="images/ticket-cupon.png" alt="Movie" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title font-inter font-bold text-4xl">
+                    1.7 lacks
+                  </h2>
+                  <p>Tickets sold</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div>
+              <div
+                class="card card-side bg-base-100 shadow-xl w-72 lg:w-80 h-44 border-2 border-b-navBtnColor"
+              >
+                <figure><img src="images/stoppage.png" alt="Movie" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title font-inter font-bold text-4xl">80K+</h2>
+                  <p>Rental partners</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="my-28 space-y-28">
+      <!-- best offer -->
+      <section class="best-offers">
+        <div class="flex flex-col justify-center items-center gap-y-10 w-full">
+          <h1 class="font-raleway font-bold text-4xl text-navHeadingColor">
+            Best offers for you
+          </h1>
+          <div class="flex flex-col  lg:flex-row gap-y-6 lg:gap-y-0 justify-center   items-center lg:justify-around w-full">
+            <div class="">
+              <!-- skeleton 1 -->
+              <div
+                class="w-[300px] md:w-[750px] lg:w-[804px] h-[232px] skeleton relative flex justify-between items-center bg-firstCouponBgColor "
+              >
+                <div
+                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white md:left-auto left-28 md:right-[11.55rem] -top-7"
+                ></div>
+                <!-- second circle -->
+                <div
+                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white  
+                        md:left-auto left-28 md:right-[11.55rem] -bottom-7 text-center "
+                ></div>
+                <!-- percentage of discount -->
+                <div
+                  class="w-[150px] md:w-[525px] lg:w-[590px] h-full flex flex-col items-start md:pl-14 justify-center font-inter border-r-2 border-r-white border-dashed text-center rounded-3xl"
+                >
+                  <h2 class="font-black text-couponHeadingColor md:text-[40px]">
+                    15% OFF
+                  </h2>
+                  <h4 class="text-couponHeadingColor font-semibold text-xl">
+                    on your next purchase
+                  </h4>
+                  <p class="text-couponDateColor font-medium text-lg">
+                    use by January 2024
+                  </p>
+                </div>
+                <!-- coupon code -->
+                <div class="font-raleway text-center md:pr-10">
+                  <h2 class="text-navHeadingColor font-bold md:text-3xl">
+                    NEW15
+                  </h2>
+                  <p class="text-couponNameColor font-medium text-xl">
+                    Coupon Code
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- skeleton 2 -->
+            <div class="">
+              <div
+                class="w-[300px] md:w-[750px] lg:w-[804px] h-[232px] skeleton relative flex justify-between items-center bg-secCouponBgColor"
+              >
+                <div
+                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white  left-28 md:left-auto md:right-[11.55rem] -top-7"
+                ></div>
+                <div
+                  class="skeleton w-16 h-16 rounded-full shrink-0 absolute bg-white  left-28 md:left-auto md:right-[11.55rem] -bottom-7"
+                ></div>
+                <!-- percentage of discount -->
+                <div
+                  class="w-[150px] md:w-[525px] lg:w-[590px] h-full flex flex-col items-start md:pl-14 justify-center font-inter border-r-2 border-r-white border-dashed text-center rounded-3xl"
+                >
+                  <h2 class="font-black text-couponHeadingColor md:text-[40px]">
+                    20% OFF
+                  </h2>
+                  <h4 class="text-couponHeadingColor font-semibold text-xl">
+                    on your next purchase
+                  </h4>
+                  <p class="text-couponDateColor font-medium text-lg">
+                    use by January 2024
+                  </p>
+                </div>
+                <!-- coupon code -->
+                <div class="font-raleway text-center md:pr-10">
+                  <h2 class="text-navHeadingColor font-bold md:text-3xl">
+                    Couple 20
+                  </h2>
+                  <p class="text-couponNameColor font-medium text-xl">
+                    Coupon Code
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="btn font-raleway text-xl font-bold text-navBtnColor border-2 border-navBtnColor bg-transparent"
+            >
+              See All Offers
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- main ph poribahan section -->
+      <section class="w-full">
+        <!-- departure section -->
+         <section class="w-full flex flex-col justify-center items-center">
+          <!-- departure section heading -->
+          <div class="md:w-[600px]   text-center space-y-6">
+            <h1 class="font-raleway font-bold text-4xl">P.H Paribahan</h1>
+            <p class="font-inter text-lg font-normal">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          </div>
+          <!-- departure main -->
+          <div>
+            
+            <div></div>
+            <div></div>
+          </div>
+         </section>
+         <!-- ticketing section -->
+         <section>
+          
+         </section>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
