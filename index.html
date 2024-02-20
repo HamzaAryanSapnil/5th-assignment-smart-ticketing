@@ -61,8 +61,8 @@
       }
     </style>
   </head>
-  <body class="px-2 lg:px-6 pt-1">
-    <header class="font-raleway">
+  <body class="">
+    <header class="font-raleway px-2 lg:px-6 pt-1">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -194,7 +194,7 @@
         </div>
       </div>
     </header>
-    <main class="my-28 space-y-28">
+    <main class="my-28 space-y-28 px-2 lg:px-6 pt-1">
       <!-- best offer -->
       <section class="best-offers">
         <div class="flex flex-col justify-center items-center gap-y-10 w-full">
@@ -440,36 +440,102 @@
                   <i class="fa-solid fa-couch"></i> Selected
                 </p>
               </div>
-              <!-- seating -->
+              <!-- seating container-->
               <div class="flex flex-col lg:flex-row mt-6">
                 <!-- driver seat -->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4">
-                  <button
-                    class="btn btn-seat justify-self-end  col-span-5 w-[110px] h-[56px]"
-                    id="btn-1"
-                  >
-                    <img src="images/wheel.png" alt="" /></button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-2">
-                    A</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-3">
-                    A1</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-4">
-                    A2</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-5">
-                    A3</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-6">
-                    A4</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-7">
-                    7</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-8">
-                    8</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-9">
-                    9</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-10">
-                    10</button
-                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-11">
-                    11
-                  </button>
+                <div id="driver-seat">
+                  <button onclick="tickets()" class="btn  btn-seat justify-self-end  col-span-5 w-[110px] h-[56px]"  id="btn-1" >
+                    <img src="images/wheel.png" alt="" />
+                    </button>
+                  </div>
+                  <!-- seats row 1-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">1</button>
+                 <button class="btn">2</button>
+                 <button class="btn">3</button>
+                 <button class="btn">4</button>
+                 <button class="btn">5</button>
+                </div>
+              </div>
+                  <!-- seats row 2-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">6</button>
+                 <button class="btn">7</button>
+                 <button class="btn">8</button>
+                 <button class="btn">9</button>
+                 <button class="btn">10</button>
+                </div>
+              </div>
+                  <!-- seats row 3-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">11</button>
+                 <button class="btn">12</button>
+                 <button class="btn">13</button>
+                 <button class="btn">14</button>
+                 <button class="btn">15</button>
+                </div>
+              </div>
+                  <!-- seats row 4-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">16</button>
+                 <button class="btn">17</button>
+                 <button class="btn">18</button>
+                 <button class="btn">19</button>
+                 <button class="btn">20</button>
+                </div>
+              </div>
+                  <!-- seats row 5-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">21</button>
+                 <button class="btn">22</button>
+                 <button class="btn">23</button>
+                 <button class="btn">24</button>
+                 <button class="btn">25</button>
+                </div>
+              </div>
+                  <!-- seats row 6-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">26</button>
+                 <button class="btn">27</button>
+                 <button class="btn">28</button>
+                 <button class="btn">29</button>
+                 <button class="btn">30</button>
+                </div>
+              </div>
+                  <!-- seats row 7-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">31</button>
+                 <button class="btn">32</button>
+                 <button class="btn">33</button>
+                 <button class="btn">34</button>
+                 <button class="btn">35</button>
+                </div>
+              </div>
+                  <!-- seats row 8-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">1</button>
+                 <button class="btn">2</button>
+                 <button class="btn">3</button>
+                 <button class="btn">4</button>
+                 <button class="btn">5</button>
+                </div>
+              </div>
+                  <!-- seats row 9-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">1</button>
+                 <button class="btn">2</button>
+                 <button class="btn">3</button>
+                 <button class="btn">4</button>
+                 <button class="btn">5</button>
+                </div>
+              </div>
+                  <!-- seats row 10-->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
+                 <button class="btn">1</button>
+                 <button class="btn">2</button>
+                 <button class="btn">3</button>
+                 <button class="btn">4</button>
+                 <button class="btn">5</button>
                 </div>
               </div>
             </div>
@@ -497,7 +563,7 @@
                     <h4>Total Price</h4>
                     <p>BDT: 550</p>
                   </div>
-                  <div class=" w-full ">
+                  <div id="coupon-section" class=" w-full hidden">
                     <label class="input flex justify-between items-center gap-2 gap-y-4 py-8">
                       <input  type="text" class="grow" placeholder="Have any coupon?" />
                       <button class="btn bg-navBtnColor text-white ">Apply</button>
@@ -559,5 +625,7 @@
         </div>
       </div>
     </footer>
+    <script src="script/script.js"></script>
+    <script src="script/function.js"></script>
   </body>
 </html>
