@@ -42,6 +42,7 @@
               ticketDesBackground: "#F7F8F8",
               ticketDesBorderColor: "#03071233",
               departureMainBackground: "#F7F8F8",
+              colorWhiteEighty: "#FFFFFFCC",
             },
           },
           fontFamily: {
@@ -421,9 +422,9 @@
         <!-- ticketing section -->
         <section>
           <!-- seat -->
-          <div class="font-inter">
+          <div class="font-inter flex ">
             <!-- seat heading -->
-            <div class="space-y-4">
+            <div class="space-y-4 lg:w-1/2 border-r-2 border-dashed border-r-navHeadingColorSixty px-8">
               <h1
                 class="font-raleway font-semibold text-2xl text-navHeadingColor border-b-2 border-dashed border-b-navHeadingColorSixty py-6"
               >
@@ -439,19 +440,124 @@
                   <i class="fa-solid fa-couch"></i> Selected
                 </p>
               </div>
+              <!-- seating -->
+              <div class="flex flex-col lg:flex-row mt-6">
+                <!-- driver seat -->
+                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4">
+                  <button
+                    class="btn btn-seat justify-self-end  col-span-5 w-[110px] h-[56px]"
+                    id="btn-1"
+                  >
+                    <img src="images/wheel.png" alt="" /></button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-2">
+                    A</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-3">
+                    A1</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-4">
+                    A2</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-5">
+                    A3</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-6">
+                    A4</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-7">
+                    7</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-8">
+                    8</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-9">
+                    9</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-10">
+                    10</button
+                  ><button class="btn btn-seat w-[110px] h-[56px]" id="btn-11">
+                    11
+                  </button>
+                </div>
+              </div>
             </div>
-            <!-- seating -->
-            <div>
-              <!-- driver seat -->
-              <div class="grid grid-cols-5">
-                <button class="btn btn-seat" id="btn-1"><img src="images/wheel.png" alt=""></button><button class="btn btn-seat" id="btn-2">2</button><button class="btn btn-seat" id="btn-3">3</button><button class="btn btn-seat" id="btn-4">4</button><button class="btn btn-seat" id="btn-5">5</button><button class="btn btn-seat" id="btn-6">6</button><button class="btn btn-seat" id="btn-7">7</button><button class="btn btn-seat" id="btn-8">8</button><button class="btn btn-seat" id="btn-9">9</button><button class="btn btn-seat" id="btn-10">10</button><button class="btn btn-seat" id="btn-11">11</button><button class="btn btn-seat" id="btn-12">12</button><button class="btn btn-seat" id="btn-13">13</button><button class="btn btn-seat" id="btn-14">14</button><button class="btn btn-seat" id="btn-15">15</button><button class="btn btn-seat" id="btn-16">16</button><button class="btn btn-seat" id="btn-17">17</button><button class="btn btn-seat" id="btn-18">18</button><button class="btn btn-seat" id="btn-19">19</button><button class="btn btn-seat" id="btn-20">20</button><button class="btn btn-seat" id="btn-21">21</button><button class="btn btn-seat" id="btn-22">22</button><button class="btn btn-seat" id="btn-23">23</button><button class="btn btn-seat" id="btn-24">24</button><button class="btn btn-seat" id="btn-25">25</button><button class="btn btn-seat" id="btn-26">26</button><button class="btn btn-seat" id="btn-27">27</button><button class="btn btn-seat" id="btn-28">28</button><button class="btn btn-seat" id="btn-29">29</button><button class="btn btn-seat" id="btn-30">30</button><button class="btn btn-seat" id="btn-31">31</button><button class="btn btn-seat" id="btn-32">32</button><button class="btn btn-seat" id="btn-33">33</button><button class="btn btn-seat" id="btn-34">34</button><button class="btn btn-seat" id="btn-35">35</button><button class="btn btn-seat" id="btn-36">36</button><button class="btn btn-seat" id="btn-37">37</button><button class="btn btn-seat" id="btn-38">38</button><button class="btn btn-seat" id="btn-39">39</button><button class="btn btn-seat" id="btn-40">40</button><button class="btn btn-seat" id="btn-41">41</button><button class="btn btn-seat" id="btn-42">42</button><button class="btn btn-seat" id="btn-43">43</button><button class="btn btn-seat" id="btn-44">44</button><button class="btn btn-seat" id="btn-45">45</button><button class="btn btn-seat" id="btn-46">46</button><button class="btn btn-seat" id="btn-47">47</button><button class="btn btn-seat" id="btn-48">48</button><button class="btn btn-seat" id="btn-49">49</button><button class="btn btn-seat" id="btn-50">50</button><button class="btn btn-seat" id="btn-51">51</button><button class="btn btn-seat" id="btn-52">52</button><button class="btn btn-seat" id="btn-53">53</button><button class="btn btn-seat" id="btn-54">54</button><button class="btn btn-seat" id="btn-55">55</button><button class="btn btn-seat" id="btn-56">56</button>
+            <!-- passenger details -->
+            <div class="px-8 lg:w-1/2">
+              <div class="">
+                <h1
+                  class="font-raleway font-semibold text-2xl text-navHeadingColor border-b-2 border-dashed border-b-navHeadingColorSixty py-6"
+                >
+                  Select Your Seat
+                </h1>
+                <!-- price class details -->
+                <div class="bg-ticketDesBackground rounded-2xl mt-4 px-8">
+                  <div class=" flex justify-between p-8 border-b-2 border-dashed">
+                    <p>Seat <span>0</span></p>
+                    <p>Class</p>
+                    <p>Price</p>
+                   </div>
+                   <div class="flex justify-between p-8 border-b-2"> 
+                    <h5>C2</h5>
+                    <p>Economy</p>
+                    <p>550</p>
+                  </div>
+                  <div class="flex justify-between p-8">
+                    <h4>Total Price</h4>
+                    <p>BDT: 550</p>
+                  </div>
+                  <div class=" w-full ">
+                    <label class="input flex justify-between items-center gap-2 gap-y-4 py-8">
+                      <input  type="text" class="grow" placeholder="Have any coupon?" />
+                      <button class="btn bg-navBtnColor text-white ">Apply</button>
+                    </label>
+                  </div>
+                  <div class="flex justify-between p-8">
+                  <h4>Grand Total</h4>
+                  <p>BDT: 550</p>
+                  </div>
+                </div>
+                <!-- form details -->
+                <div class="w-full mt-4">
+                  <form action="" class="w-full">
+                    <label class="form-control w-full ">
+                      <div class="label">
+                        <span class="label-text">What is your name?</span>
+                      </div>
+                      <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full " />
+                    </label>
+                    <label class="form-control w-full ">
+                      <div class="label">
+                        <span class="label-text">Phone Number*</span>
+                      </div>
+                      <input type="number" placeholder="Enter Your Phone Number" class="input input-bordered w-full " />
+                    </label>
+                    <label class="form-control w-full">
+                      <div class="label">
+                        <span class="label-text">Email Id</span>
+                      </div>
+                      <input type="text" placeholder="Enter Your Email Id" class="input input-bordered w-full" />
+                    </label>
+                    <button class="btn w-full mt-4 bg-navBtnColor text-white">Next</button>
+                  </form>
+                </div>
+                <!-- Terms and conditions -->
+                <div class="flex p-8 justify-between items-center">
+                  <p>Terms and Conditions</p>
+                  <p>Cancellation Policy</p>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- passenger details -->
-          <div></div>
         </section>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-navHeadingColor flex justify-between items-center">
+      <div class="space-y-4 w-96">
+        <h3 class=" font-raleway font-extrabold text-4xl text-white">P-Ticket</h3>
+        <p class="font-inter text-lg text-colorWhiteEighty">P-Ticket is a digital platform to make your daily commuting better.</p>
+      </div>
+      <div>
+        <p class="text-white font-raleway font-semibold text-xl">Download Our App</p>
+        <div class="flex gap-4 border-2 rounded border-white">
+          <img src="images/playstore.png" alt="">
+          <div >
+            <p class="text-white font-inter text-base">Get it on</p>
+            <p class="text-white font-inter text-sm">Google Play</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
