@@ -288,11 +288,9 @@
         </div>
       </section>
       <!-- main ph poribahan section -->
-      <section class="w-full space-y-6">
+      <section class="w-full space-y-6 bg-departureMainBackground border-t-2 border-t-navBtnColor rounded-3xl lg:pt-12 lg:px-36">
         <!-- departure section -->
-        <section
-          class="w-full flex flex-col justify-center items-center bg-departureMainBackground gap-y-6"
-        >
+        <section class="w-full flex flex-col justify-center items-center  gap-y-6" >
           <!-- departure section heading -->
           <div class="md:w-[600px] text-center space-y-6">
             <h1 class="font-raleway font-bold text-4xl">P.H Paribahan</h1>
@@ -302,13 +300,10 @@
             </p>
           </div>
           <!-- departure main -->
-          <div
-            class="flex flex-col lg:flex-row justify-center items-center gap-y-6 lg:gap-y-0 gap-x-6 lg:w-[1170px] lg:h-[450px] bg-white"
-          >
+          <div class="flex flex-col lg:flex-row justify-around items-center gap-y-6 lg:gap-y-0 gap-x-6 lg:w-11/12 lg:h-[450px] bg-white rounded-3xl">
             <!-- first side -->
-            <div
-              class="md:w-[810px] h-full lg:border-r-2 border-dashed border-r-navBtnColor pr-12"
-            >
+            <!-- lg:border-r-2 border-dashed border-r-navBtnColor -->
+            <div  class=" h-full  pr-12">
               <div class="flex flex-col gap-y-6 mt-8">
                 <!-- heading -->
                 <div
@@ -374,7 +369,7 @@
                     </h6>
                   </div>
                   <div
-                    class="flex flex-wrap gap-y-4 md:gap-y-0 justify-around pt-6"
+                    class="flex flex-wrap gap-y-4 md:gap-y-0 md:gap-x-4 justify-around pt-6"
                   >
                     <button
                       class="btn font-inter font-medium text-base text-couponHeadingColorEighty bg-couponHeadingColorFivePercent"
@@ -399,14 +394,13 @@
               <div
                 class="bg-departureMainBackground w-16 h-16 rounded-full shrink-0 py-6 md:absolute md:-top-6 -right-[0.5rem]"
               ></div>
+              <div class="border-2 border-dashed border-navBtnColor h-4/6 mt-16 mr-[1.5rem]"></div>
               <div
                 class="bg-departureMainBackground w-16 h-16 rounded-full shrink-0 md:absolute md:-bottom-6 -right-[0.5rem]"
               ></div>
             </div>
             <!-- third side -->
-            <div
-              class="flex flex-col gap-y-6 items-center justify-center w-32 h-32"
-            >
+            <div class="flex flex-col md:gap-y-4 lg:gap-y-6 items-center justify-center lg:w-32 lg:h-32">
               <div><img src="images/fare.png" alt="" /></div>
               <h3 class="font-raleway font-bold text-3xl text-navHeadingColor">
                 550 Taka
@@ -420,7 +414,7 @@
           </div>
         </section>
         <!-- ticketing section -->
-        <section>
+        <section class="mt-8 bg-white rounded-3xl">
           <!-- seat -->
           <div class="font-inter flex ">
             <!-- seat heading -->
@@ -440,104 +434,7 @@
                   <i class="fa-solid fa-couch"></i> Selected
                 </p>
               </div>
-              <!-- seating container-->
-              <div class="flex flex-col lg:flex-row mt-6">
-                <!-- driver seat -->
-                <div id="driver-seat">
-                  <button onclick="tickets()" class="btn  btn-seat justify-self-end  col-span-5 w-[110px] h-[56px]"  id="btn-1" >
-                    <img src="images/wheel.png" alt="" />
-                    </button>
-                  </div>
-                  <!-- seats row 1-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">1</button>
-                 <button class="btn">2</button>
-                 <button class="btn">3</button>
-                 <button class="btn">4</button>
-                 <button class="btn">5</button>
-                </div>
-              </div>
-                  <!-- seats row 2-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">6</button>
-                 <button class="btn">7</button>
-                 <button class="btn">8</button>
-                 <button class="btn">9</button>
-                 <button class="btn">10</button>
-                </div>
-              </div>
-                  <!-- seats row 3-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">11</button>
-                 <button class="btn">12</button>
-                 <button class="btn">13</button>
-                 <button class="btn">14</button>
-                 <button class="btn">15</button>
-                </div>
-              </div>
-                  <!-- seats row 4-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">16</button>
-                 <button class="btn">17</button>
-                 <button class="btn">18</button>
-                 <button class="btn">19</button>
-                 <button class="btn">20</button>
-                </div>
-              </div>
-                  <!-- seats row 5-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">21</button>
-                 <button class="btn">22</button>
-                 <button class="btn">23</button>
-                 <button class="btn">24</button>
-                 <button class="btn">25</button>
-                </div>
-              </div>
-                  <!-- seats row 6-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">26</button>
-                 <button class="btn">27</button>
-                 <button class="btn">28</button>
-                 <button class="btn">29</button>
-                 <button class="btn">30</button>
-                </div>
-              </div>
-                  <!-- seats row 7-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">31</button>
-                 <button class="btn">32</button>
-                 <button class="btn">33</button>
-                 <button class="btn">34</button>
-                 <button class="btn">35</button>
-                </div>
-              </div>
-                  <!-- seats row 8-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">1</button>
-                 <button class="btn">2</button>
-                 <button class="btn">3</button>
-                 <button class="btn">4</button>
-                 <button class="btn">5</button>
-                </div>
-              </div>
-                  <!-- seats row 9-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">1</button>
-                 <button class="btn">2</button>
-                 <button class="btn">3</button>
-                 <button class="btn">4</button>
-                 <button class="btn">5</button>
-                </div>
-              </div>
-                  <!-- seats row 10-->
-                <div class="grid grid-cols-5 grid-rows-3 gap-x-20 px-8 gap-y-4 ">
-                 <button class="btn">1</button>
-                 <button class="btn">2</button>
-                 <button class="btn">3</button>
-                 <button class="btn">4</button>
-                 <button class="btn">5</button>
-                </div>
-              </div>
+            
             </div>
             <!-- passenger details -->
             <div class="px-8 lg:w-1/2">
