@@ -111,7 +111,7 @@ function showClassPrice(elementId, seatNum) {
     div.appendChild(h5);
     div.appendChild(p);
     div.appendChild(p2);
-    div.classList.add("flex", "w-full", "justify-between", "items-center", "font-inter", "text-lg", "text-navHeadingColorSixty");
+    div.classList.add("flex", "w-full", "justify-between", "items-center", "font-inter", "text-lg", "text-navHeadingColorSixty", "pt-4");
 
     h5.innerText = seatNum;
     p.innerText = "Economy";
@@ -202,13 +202,41 @@ function grandTotal(value) {
 function discountedPriceFifteen(value) {
     const price = value;
     const discount = (price * 15) / 100;
-    const newPrice = price - discount;
-    return newPrice;
+    // const newPrice = price - discount;
+    return discount;
 }
 function discountedPriceTwenty(value) {
     const price = value;
     const discount = (price * 20) / 100;
-    const newPrice = price - discount;
-    return newPrice;
+    // const newPrice = price - discount;
+    return discount;
 }
 
+function appendDivFifteen(elementId,value) {
+    const element = document.getElementById(elementId); 
+    const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
+    const div = document.createElement("div");
+
+    p1.innerText = "Discount 15%";
+    p2.innerText = value;
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.classList.add("flex", "w-full", "justify-between");
+
+    element.appendChild(div);
+}
+function appendDivTwenty(elementId,value) {
+    const element = document.getElementById(elementId); 
+    const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
+    const div = document.createElement("div");
+
+    p1.innerText = "Discount 20%";
+    p2.innerText = value;
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.classList.add("flex", "w-full", "justify-between");
+
+    element.appendChild(div);
+}

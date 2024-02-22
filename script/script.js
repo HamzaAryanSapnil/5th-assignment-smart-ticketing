@@ -108,13 +108,18 @@ document.getElementById("apply-coupon").addEventListener("click", function () {
     const grandPrice = seatSelectVallueById("grand-total");
     const newGrandTotal = grandTotal(grandPrice);
     const discountedGrandTotal = discountedPriceTwenty(newGrandTotal);
-    setTextElementValueById("grand-total", discountedGrandTotal);
+    const discount = newGrandTotal - discountedGrandTotal 
+    setTextElementValueById("grand-total", discount);
+    appendDivTwenty("grand-total-section", discountedGrandTotal);
+
   }
   else if (couponCode === "NEW15") {
     const grandPrice = seatSelectVallueById("grand-total");
     const newGrandTotal = grandTotal(grandPrice);
     const discountedGrandTotal = discountedPriceFifteen(newGrandTotal);
-    setTextElementValueById("grand-total", discountedGrandTotal);
+    const discount = newGrandTotal - discountedGrandTotal 
+    setTextElementValueById("grand-total", discount);
+    appendDivFifteen("grand-total-section", discountedGrandTotal);
   }
   else{
     alert("Enter Valid Coupon Code");
